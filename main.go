@@ -53,7 +53,9 @@ func main() {
 	pin.Output()
 
 	for x := 0; x < 20; x++ {
-		pin.Toggle()
+		//pin.Toggle()
+		pin.Low()
 		time.Sleep(time.Second)
+		pin.High()
 	}
 }
