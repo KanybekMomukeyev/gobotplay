@@ -1,5 +1,11 @@
 package main
 
+import (
+	"github.com/stianeikeland/go-rpio"
+	"fmt"
+	"os"
+)
+
 //
 //import (
 //	"time"
@@ -33,12 +39,12 @@ package main
 //}
 //
 
-import (
-	"fmt"
-	"github.com/stianeikeland/go-rpio"
-	"os"
-	"time"
-)
+//import (
+//"fmt"
+//"github.com/stianeikeland/go-rpio"
+//"os"
+//"time"
+//)
 
 func main() {
 
@@ -52,7 +58,7 @@ func main() {
 	pin := rpio.Pin(17)
 	pin.Output()
 
-	pin.High()
+	pin.Low()
 
 	//for x := 0; x < 20; x++ {
 	//	//pin.Toggle()
